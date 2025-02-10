@@ -35,11 +35,11 @@ The original dataset processed by https://rbabaei82.github.io/MultiOmics_TCGA-BR
 
 #### Vital Status 
 ![image](https://github.com/user-attachments/assets/101c7764-372c-480e-8e8d-99705f3768c0)
-
 #### Mutations in FOXA1
 ![image](https://github.com/user-attachments/assets/b66003cf-ca85-4c0e-8b1d-a3e587b787b0)
 #### Estrogen Receptor Status_Positive
 ![image](https://github.com/user-attachments/assets/8c3a63ec-2711-40a0-92d1-6d9ebe76846c)
+
 Cluster 2 has the lowest vital status, ER.status_Positive, and a lower mutation in FOXA1, compared to cluster 0 which has the highest ER.status_Positive.
 While cluster 1 has the highest vital status, no ER.status (negative or undetermined) and lower FOXA1 mutation compared to cluster 2.
 Studies have shown that FOXA1 governs the estrogen-regulated transcriptome and cell growth in breast cancer. 
@@ -47,9 +47,10 @@ Cluster 2 has lower ER.status_Positive, and a lower mutation in FOXA1, as FOXA1 
 Hurtado A.et al FOXA1 is a key determinant of estrogen receptor function and endocrine response. 2011.
 Robinson et al. FoxA1 is a Key Mediator of Hormonal Response in Breast and Prostate Cancer. 2012.
 
+#### The best performing model is Random Forest with an accuracy of 0.9018.
+![image](https://github.com/user-attachments/assets/924bd596-d303-43c8-87fa-6e3f744db57d)
+
 ## Conclusion
-* Considering the dataset was smaller after cleaning and removing cases with missing features from the TCGA-BRCA data
-
-* Another K means clustering analysis without using PCA prior. 
-
-* The next step will be acquire more data for modeling a predictor for vital status based on the FOXA1 mutation in breast carcinoma cases.
+1. Considering the dataset was smaller after cleaning and removing cases with missing features from the TCGA-BRCA data
+2. Another K means clustering analysis without using PCA prior. 
+3. The next step will be acquire more data for modeling a predictor for vital status based on the FOXA1 mutation in breast carcinoma cases.
